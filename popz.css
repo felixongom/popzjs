@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.change_display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    position: absolute;
+    
+}
+/* ........................... */
+.card_container {
+    margin-top: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 15px;
+}
+
+.card_container div {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+} 
+
+/* ........................... */
+
+
+
+
+/* display pops none */
+.dispay_none{
+    display: none;
+}
+
+/* section handles poping up of error */
+.popz_error {
+    background-color: rgb(252, 162, 146);
+    border: 1px solid red;
+    color: rgb(156, 4, 4);
+    width: 400px;
+}
+
+/* section handles poping up of sucess */
+.popz_success {
+    background-color: rgb(93, 228, 93);
+    border: 1px solid rgb(17, 110, 17);
+    color: rgb(17, 110, 17);
+    width: 400px;
+    
+}
+/* section handles poping up of sucess */
+.popz_warning {
+    background-color: rgb(253, 188, 68);
+    border: 1px solid yellow;
+    color: rgb(124, 124, 3);
+    width: 400px;
+    
+}
+
+/* section handles poping up of sucess */
+.popz_default {
+    background-color: #fff;
+    border: 2px solid #f2f2f2;
+    color: #444;
+    width: 400px;
+}
+
+/* section handles poping up of info */
+.popz_info {
+    background-color: rgb(57, 126, 255);
+    border: 2px solid rgb(102, 82, 252);
+    color: rgb(235, 233, 250);
+    width: 400px;
+}
+
+/* keyframes for animation_top_left */
+.animation_top_left{
+    top: 0;
+    left: 0;
+    animation: animation_top_left linear .4s;
+}
+
+@keyframes animation_top_left {
+    from {
+        left: -500px;
+    }
+    to {
+        display: block;
+        left: 0px;
+    }
+}
+
+/* keyframes for animation_top_right */
+.animation_top_right{
+    top: 0;
+    right: 0;
+    animation: animation_top_right linear .4s;
+}
+
+@keyframes animation_top_right {
+    from {
+        right: -500px;
+    }
+    to {
+        display: block;
+        right: 0px;
+    }
+}
+
+/* keyframes for animation_bottom_right */
+.animation_bottom_right{
+    top: 88vh;
+    right: 0;
+    animation: animation_bottom_right linear .4s;
+}
+
+@keyframes animation_bottom_right {
+    from {
+        right: -500px;
+    }
+    to {
+        display: block;
+        right: 0px;
+    }
+}
+
+/* keyframes for animation_right */
+.animation_right{
+    top: 45vh;
+    right: 0;
+    animation: animation_bottom_right linear .4s;
+}
+
+@keyframes animation_right {
+    from {
+        right: -500px;
+    }
+    to {
+        display: block;
+        right: 0px;
+    }
+}
+
+/* keyframes for animation_bottom_left */
+.animation_bottom_left{
+    top: 88vh;
+    left: 0;
+    animation: animation_bottom_left linear .4s;
+    z-index: 10000;
+}
+
+@keyframes animation_bottom_left {
+    from {
+        left: -500px;
+    }
+    to {
+        display: block;
+        left: 0px;
+    }
+}
+
+/* keyframes for animation_left */
+.animation_left{
+    top: 40vh;
+    left: 0;
+    animation: animation_bottom_left linear .4s;
+}
+
+@keyframes animation_bottom_left {
+    from {
+        left: -500px;
+    }
+    to {
+        display: block;
+        left: 0px;
+    }
+}
+
+/* keyframes for animation_top */
+.animation_top{
+    top: 0%;
+    animation: animation_top linear .4s;
+}
+
+@keyframes animation_top{
+    from {
+        top: -29vh;
+    }
+    to {
+        display: block;
+        top: 0vh;
+    }
+}
+
+/* keyframes for animation_bottom */
+.animation_bottom{
+    top: 88vh;
+    animation: animation_bottom linear .4s;
+    left: 35%;
+}
+
+@keyframes animation_bottom{
+    from {
+        top: 120vh;;
+    }
+    to {
+        display: block;
+        top: 88vh;
+    }
+}
+
+/* keyframes for animation_center */
+.animation_center{
+    top: 40vh;
+    animation: animation_center linear .5s;
+
+}
+
+@keyframes animation_center{
+    from {
+        display: none;
+        /* top: 45%; */
+    }
+    to {
+        display: block;
+        display: inlin-block;
+        
+    }
+}
+
+.popz_container {
+    width: 400px;
+    position: absolute;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.popz_wrapper{
+    /* background-color:red; */
+    width: 100vw;
+    height: 0vh;
+    position: fixed;
+    top:0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
