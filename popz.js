@@ -1,7 +1,8 @@
 
-const body = document.body
+const popzbody = document.querySelector('body')
 const messege_container = document.createElement('div')//messege main wrapper
 
+// console.log(popzbody);
 function popz(params) {
     // changing underline color
     function lineColor() {
@@ -74,7 +75,7 @@ function popz(params) {
     // function for poping up messege at the top left animation_top_right
     function popzTopLeft() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
     <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_top_left">
@@ -90,7 +91,7 @@ function popz(params) {
     // function for poping up messege at the top right
     function popzTopRight() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_top_right">
@@ -106,7 +107,7 @@ function popz(params) {
     // function for poping up messege at the right 
     function popzRight() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_right">
@@ -122,7 +123,7 @@ function popz(params) {
     // function for poping up messege at the bottom right 
     function popzBottomRight() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_bottom_right">
@@ -138,7 +139,7 @@ function popz(params) {
     // function for poping up messege at the bottom right 
     function popzBottom() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_bottom">
@@ -154,7 +155,7 @@ function popz(params) {
     // function for poping up messege at the bottom left 
     function popzBottomLeft() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_bottom_left">
@@ -170,7 +171,7 @@ function popz(params) {
     // function for poping up messege at the left 
     function popzLeft() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_left">
@@ -186,7 +187,7 @@ function popz(params) {
     // function for poping up messege at the center 
     function popzCenter() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper   remove_popz ">
         <div class="popz_container animation_center">
@@ -202,7 +203,7 @@ function popz(params) {
     // function for poping up messege at the top 
     function popzTop() {
         messege_container.setAttribute('class', 'change_display')
-        body.appendChild(messege_container)
+        popzbody.appendChild(messege_container)
         messege_container.innerHTML = `
         <div class="popz_wrapper remove_popz ">
         <div class="popz_container animation_top">
@@ -265,3 +266,6 @@ function popz(params) {
     }
 
 }
+
+
+

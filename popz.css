@@ -13,24 +13,6 @@
     position: absolute;
     
 }
-/* ........................... */
-.card_container {
-    margin-top: 20px;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    grid-gap: 15px;
-}
-
-.card_container div {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-} 
-
-/* ........................... */
-
-
-
 
 /* display pops none */
 .dispay_none{
@@ -236,7 +218,6 @@
 .popz_container {
     width: 400px;
     position: absolute;
-    z-index: 1000;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
@@ -249,6 +230,7 @@
 
 .popz_wrapper{
     /* background-color:red; */
+    z-index: 100000000;
     width: 100vw;
     height: 0vh;
     position: fixed;
