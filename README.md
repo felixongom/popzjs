@@ -34,7 +34,7 @@ popz({
 **body of the messege**: pass in the actual error body
 
 ## type,
-**the thpe of mesege**: error, success, info, warning, ''
+**the type of mesege**: error, success, info, warning, ''
 
 ## customClass,
 **Any custom class of your choice**: either a bootstrap class or regular css class
