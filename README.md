@@ -24,9 +24,21 @@ popz({
 `popz()`
 
 # Options
-| No. | optoins | description                                       | possible values (strings)
-|-----|:----------:|:----------------------------------------:|
-| 1     | title       | tittle of the errer messege showing | 
+## pos ,
+**position:** :top, bottom, right, left, top-right , top-left, bottom-right, bottom-left
 
-| 2     | pos        | position where it will show              | top, bottom, left, right, top-left, top-right, bittom-left, bottom-right
+## title , 
+**title of the  messege showing**: pass in any string
+
+## body, 
+**body of the messege**: pass in the actual error body
+
+## type,
+**the thpe of mesege**: error, success, info, warning, ''
+
+## customClass,
+**Any custom class of your choice**: either a bootstrap class or regular css class
+
+### NB:
+**All options are optional and are passed in a single object**
 
