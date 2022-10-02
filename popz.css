@@ -40,7 +40,7 @@
     background-color: rgb(253, 188, 68);
     border: 1px solid yellow;
     color: rgb(124, 124, 3);
-    width: 400px;
+    /* width: 40px; */
     
 }
 
@@ -226,6 +226,13 @@
     font-weight: 100;
     font-style: italic;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+.popz_container {
+    width: 200px;
+
+}
 }
 
 .popz_wrapper{
