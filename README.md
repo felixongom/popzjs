@@ -25,7 +25,7 @@ popz({
 
 # Options
 | No. | optoins | description                                       | possible values (strings)
-
+|-----|:----------:|:----------------------------------------:|
 | 1     | title       | tittle of the errer messege showing | 
 
 | 2     | pos        | position where it will show              | top, bottom, left, right, top-left, top-right, bittom-left, bottom-right
